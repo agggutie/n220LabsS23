@@ -1,0 +1,23 @@
+.index-container{
+    width: 100%;
+    height: min-content;
+}
+
+h1{
+    margin: 0 auto;
+    width: min-content;
+}
+
+a{
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+a:visited{
+    color: black;
+
+}
+
+a:hover{
+    font-size: 20px;
+}
