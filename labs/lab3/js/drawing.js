@@ -1,0 +1,1 @@
+// Create a composition of of a star and store it in a function. That function must be able to be changed with each call. I am not sure how to have each composition return the value but I am thinking x += 100 , y += 100 or random to give me different x and y locations in the draw function so it has different values in each call. 

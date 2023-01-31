@@ -1,0 +1,1 @@
+// Create a function that stores the red component. Create a variable to set the red to 0. Apply it in the draw function to a shape.
