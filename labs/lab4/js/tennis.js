@@ -1,5 +1,7 @@
 if (keyIsDown(UP_ARROW)){
-    posX -= 1
+    posY += 1
 }
 
-if (keyIsDown(DOWN_ARROW))
+if (keyIsDown(DOWN_ARROW)){
+    posY -= 1
+}
