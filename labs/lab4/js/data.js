@@ -1,8 +1,8 @@
 function composition(){
     
-    let w = 40
+    w = 40
 
-    let h = 40
+    h = 40
 
     fill("#ff0000")
     rect(mouseX, mouseY, w, h)
