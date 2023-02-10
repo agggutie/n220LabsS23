@@ -1,8 +1,4 @@
-let circleP = {
-    xPos: 0,
-    yPos: 400,
-    c: (200,22,22)
-}
+const ball = {xPos:-10, yPos:400, r:90, color:"#ff0000"};
 
 
 function setup(){
@@ -14,12 +10,15 @@ function setup(){
 function draw(){
     background(0)
 
-    fill(c)
-    circle(circleP.xPos, circleP.yPos, 90)
+    fill(ball.color)
 
-    xPos += 5
+    circle(ball.xPos, ball.yPos, ball.r)
 
-    if(xPos > 800){
-        xPos = 0
+    if(ball.xPos > 830){
+        ball.xPos = -30
     }
+    else{
+        ball.xPos+=5
+    }
+    
 }
