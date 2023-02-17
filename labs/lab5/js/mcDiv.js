@@ -1,36 +1,21 @@
-const boxes = {posX:360, posY:360, r: 150, red: "#FF0000", blue: "#0000FF"}
-
-const eyebrows = {posY:200, w: 160, h:80} 
+let mcDiv = document.createElement("div");
 
 
-function drawBoxes(position){
-
-    fill(boxes.blue)
-
-    circle(position, boxes.posY, boxes.r)
-
+function mouseClicked(){
+    mcDiv.append("div")
 }
 
-function drawEyebrows(positions){
-    fill(boxes.red)
-
-    rect(positions, eyebrows.posY, eyebrows.w, eyebrows.h)
-}
-
-function setup(){
-    createCanvas(800, 800)
 
 
-}
 
-function draw(){
-    frameRate(10)
-    background(random(30,50))
+mcDiv.style.width = "800px";
+mcDiv.style.height = "200px";
+mcDiv.style.backgroundColor = "yellow";
 
-    drawEyebrows(440)
 
-    drawEyebrows(250)
-    drawBoxes(344)
-    drawBoxes(500)
 
-}
+
+
+document.body.appendChild(mcDiv)
+
+mcDiv.addEventListener('click', mouseClicked)

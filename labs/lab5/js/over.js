@@ -1,28 +1,23 @@
-// stored variables
-const leftR = {posX: 20, posY: 360, w: 20, h: 40}
-const rightR = {posX: 760, posY: 360, w: 20, h: 40}
+//refrence div
+let div = document.querySelector("#div")
 
-function setup(){
-    createCanvas(800, 800)
+div.style.width = "100px"
+div.style.height = "100px"
+div.style.margin = "10px"
 
+
+// this allows the div to be seen before function calls if I were to remove it no color will appear until the functions are called
+let color = div.style.backgroundColor = "blue"
+
+//mouse is over the div / change color to black
+ function mouseOver(){
+    color = div.style.backgroundColor = "black"
 }
 
-function draw(){
-    background(220)
-
-    rect(leftR.posX, leftR.posY, leftR.w, leftR.h)
-    rect(rightR.posX, rightR.posY, rightR.w, rightR.h)
-//increase & decrease pos values if arrow key is up or down
-    if (keyIsDown(UP_ARROW)){
-        rightR.posY += 1
-        leftR.posY -= 1
-    }
-
-    
-    if (keyIsDown(DOWN_ARROW)){
-        leftR.posY += 1
-        rightR.posY -= 1
-    }
-
+//mouse is out of the div / change color to blue
+function mouseOut(){
+    color = div.style.backgroundColor = "blue"
 }
+
+
 
