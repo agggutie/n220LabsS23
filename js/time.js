@@ -1,12 +1,14 @@
-let coolThing = document.getElementById("coolThing")
+let mouse = document.getElementById("mouse")
 
-function checkResponse(time) {
-    if(time=="morning"){
-        coolThing.innerHTML = "That is correct"
-    }
+console.log(mouse)
+mouse.style.width = 100 + "px"
+mouse.style.height = 100 + "px"
+mouse.style.backgroundColor = "red"
 
-    else{
-        coolThing.innerHTML = "Guess again"
-    }
+function changeColor(){
+    mouse.style.backgroundColor = "blue"
+}
 
+function changeColorHover(){
+    mouse.style.backgroundColor = "black"
 }

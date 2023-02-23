@@ -1,18 +1,17 @@
+let box = 100
+
 const dvBox = document.querySelector("#dvBox")
 
-let boxW = 100 
-let boxH = 100 
+dvBox.style.backgroundColor = "green";
+dvBox.style.width = box + "px"
+dvBox.style.height = box + "px"
 
 function increase(){
-    dvBox.style.width = boxW * 1.1 + "px"
-    dvBox.style.height = boxH * 1.1 + "px"
+    box = box * 1.1
+    dvBox.style.width = box + "px"
+    dvBox.style.height = box + "px"
 
 }
-
-dvBox.style.backgroundColor = "green";
-dvBox.style.width = boxW + "px"
-dvBox.style.height = boxH + "px"
-
 
 // stuck here not sure how to reassign the boxW value to = bowW * 1.1
 
