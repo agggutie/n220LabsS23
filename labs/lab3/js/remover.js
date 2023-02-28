@@ -2,7 +2,7 @@
 
 //
 
-function noRed(fill(170,200,150)){
+function noRed(r){
 
     fill(r=0,160,110)
 
@@ -17,6 +17,7 @@ function draw(){
     background(200)
     fill(200,0,0)
     circle(30,50,30)
+    noRed(0)
     fill(noRed.r,160,110)   
     circle(mouseX,mouseY,30)
 }
