@@ -16,17 +16,31 @@ function compLogic(){
         computerResult.innerText = "Computer:" + " " + "Scissors"
     }
     
+    
 }
 
 function guard(){
     playerInput.innerText = "Player:" + " " + "Guard"
-    roundResult.innerText = "Result" + " " + "Computer Wins"
     playerScore -= .5
-    score.innerText = playerScore 
+    score.innerText = `${playerScore}`
 }
 
 function scissors(){
-    playerInput 
+    playerInput.innerText = "Player:" + " " + "Scissors"
+    playerScore += 1
+    score.innerText = `${playerScore}`
+}
+
+function rock(){
+    playerInput.innerText = "Player:" + " " + "Rock"
+    playerScore -= 1
+    score.innerText = `${playerScore}`
+}
+
+function paper(){
+    playerInput.innerText = "Player:" + " " + "Paper"
+    playerScore += 1
+    score.innerText = `${playerScore}`
 }
 
 
