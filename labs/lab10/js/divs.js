@@ -13,5 +13,14 @@ let objects = [
 function create(){
     for(var i = 0; i < objects.length; i++){
         let newEl = document.createElement("div");
+        
+        newEl.style.backgroundColor = objects[i].color;
+        
+        newEl.style.height = objects[i].height + "px";
+        
+        newEl.style.width = objects[i].width + "px"
+
+        dvOutput.appendChild(newEl)
+        
     }
 }
