@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changer</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            float: left;
+            margin: 5px;
+            background-color: gray;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" data-color="red"></div>
+    <div class="box" data-color="green"></div>
+    <div class="box" data-color="blue"></div>
+</body>
+<script>
+      // Get all the boxes
+  const boxes = document.querySelectorAll('.box');
+
+// Function to handle the click event
+function changeColor(event) {
+    const box = event.target;
+    const color = box.dataset.color;
+
+    // Change the background color based on the stored data-color value
+    box.style.backgroundColor = color;
+}
+
+// Attach the event listener to each box
+boxes.forEach(box => {
+    box.addEventListener('click', changeColor);
+});
+</script>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RGB Color Changer</title>
+    <style>
+        #color-box {
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            margin-bottom: 10px;
+        }
+
+        #rgb-display {
+            font-size: 20px;
+        }
+
+        .color-btn {
+            width: 70px;
+            height: 30px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="color-box"></div>
+    <div id="rgb-display"></div>
+
+    <button class="color-btn" data-color="red" data-value="1">+1 Red</button>
+    <button class="color-btn" data-color="red" data-value="5">+5 Red</button>
+    <button class="color-btn" data-color="red" data-value="10">+10 Red</button>
+
+    <button class="color-btn" data-color="green" data-value="1">+1 Green</button>
+    <button class="color-btn" data-color="green" data-value="5">+5 Green</button>
+    <button class="color-btn" data-color="green" data-value="10">+10 Green</button>
+
+    <button class="color-btn" data-color="blue" data-value="1">+1 Blue</button>
+    <button class="color-btn" data-color="blue" data-value="5">+5 Blue</button>
+    <button class="color-btn" data-color="blue" data-value="10">+10 Blue</button>
+</body>
+<script src="js/mixer.js"></script>
+</html>
